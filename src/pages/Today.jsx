@@ -3,9 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../lib/AuthContext';
 import { getTheme } from '../lib/themes';
 import {
-  getGoals, toggleGoalLog, isGoalCompleted, getDayCompletion,
-  hasDailyStarForDate, addReward, addGameUnlock, getGoalLogs,
+  getGoals, isGoalCompleted, getDayCompletion, hasDailyStarForDate, getGoalLogs,
 } from '../lib/storage';
+import { toggleGoalLog, addReward, addGameUnlock } from '../lib/db';
 import { today, formatDateDisplay, getWeekDates, getWeekOf } from '../lib/dateUtils';
 import GoalCheckItem from '../components/GoalCheckItem';
 import CelebrationModal from '../components/CelebrationModal';

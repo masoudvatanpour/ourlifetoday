@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getKids, saveKid, deleteKid } from '../lib/storage';
+import { getKids, generateId } from '../lib/storage';
+import { saveKid, deleteKid } from '../lib/db';
 import { getTheme, AVATARS, COLOR_OPTIONS } from '../lib/themes';
-import { generateId } from '../lib/storage';
 
 const BLANK_KID = { name: '', pin: '', avatar: '🦋', color: 'purple', weeklyTarget: 5, age: 6 };
 

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getKids, getGoals, saveGoal, deleteGoal, generateId } from '../lib/storage';
+import { getKids, getGoals, generateId } from '../lib/storage';
+import { saveGoal, deleteGoal } from '../lib/db';
 import { getTheme, GOAL_ICONS, GOAL_CATEGORIES, CATEGORY_COLORS } from '../lib/themes';
 
 const BLANK_GOAL = { title: '', icon: '⭐', category: 'chore', active: true };

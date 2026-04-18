@@ -2,7 +2,8 @@ import { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../lib/AuthContext';
 import { getTheme } from '../lib/themes';
-import { getAvailableGameUnlock, markGameUnlockUsed, addReward } from '../lib/storage';
+import { getAvailableGameUnlock } from '../lib/storage';
+import { markGameUnlockUsed, addReward } from '../lib/db';
 
 const EMOJI_PAIRS = ['🦋', '🦁', '🐸', '🦊', '🐼', '🦄', '🌈', '⭐'];
 
